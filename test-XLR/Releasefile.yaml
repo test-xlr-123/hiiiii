@@ -1,6 +1,6 @@
 # Exported from:        http://SAIs-MacBook-Pro.local:5516/
 # Release version:      22.2.0
-# Date created:         Tue Dec 13 23:14:53 IST 2022
+# Date created:         Wed Dec 14 00:03:49 IST 2022
 
 ---
 apiVersion: xl-release/v1
@@ -16,8 +16,14 @@ spec:
     - name: "1"
       type: delivery.RegisterTrackedItems
       trackedItems:
-      - test
-      delivery: yoo/test-del
+      - testT
+      delivery: yoo/testD1
+    - name: "2"
+      type: delivery.MarkTrackedItems
+      trackedItems:
+      - testT2
+      stage: New Stage
+      delivery: yoo/testD2
     color: '#3d6c9e'
   scriptUsername: admin
   scriptUserPassword: !value "xlrelease_Release_test_delivery_scriptUserPassword"
